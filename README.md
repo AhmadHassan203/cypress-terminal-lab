@@ -152,36 +152,13 @@ it('should submit form with valid data', () => {
 })
 ```
 
-## 📚 Learning Resources
 
-- [Cypress Official Documentation](https://docs.cypress.io)
-- [Best Practices](https://docs.cypress.io/guides/references/best-practices)
-- [API Reference](https://docs.cypress.io/api/commands/and)
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the ISC License - see the LICENSE file for details.
 
 ## 👤 Author
 
 **Ahmad Hassan**
 - GitHub: [@AhmadHassan203](https://github.com/AhmadHassan203)
 
-## 🔗 Links
 
-- **Repository:** [cypress-terminal-lab](https://github.com/AhmadHassan203/cypress-terminal-lab)
-- **SauceDemo App:** [https://www.saucedemo.com](https://www.saucedemo.com)
 
----
-
-<p align="center">Made with ❤️ for the QA and Testing Community</p>
