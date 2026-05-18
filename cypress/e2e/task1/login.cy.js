@@ -6,7 +6,6 @@ describe('Login Functionality Tests', () => {
     cy.visit('/')
   })
 
-  // Login Test 1: Valid credentials
   it('should login successfully with valid credentials', () => {
     cy.get('#user-name').type('standard_user')
     cy.get('#password').type('secret_sauce')
@@ -17,7 +16,6 @@ describe('Login Functionality Tests', () => {
     cy.get('.app_logo').should('contain.text', 'Swag Labs')
   })
 
-  // Login Test 2: Invalid password
   it('should show error message with incorrect password', () => {
     cy.get('#user-name').type('standard_user')
     cy.get('#password').type('wrongpassword')
@@ -28,7 +26,6 @@ describe('Login Functionality Tests', () => {
       .and('contain.text', 'Username and password do not match')
   })
 
-  // Login Test 3: Empty fields
   it('should show validation message when fields are empty', () => {
     cy.get('#login-button').click()
     

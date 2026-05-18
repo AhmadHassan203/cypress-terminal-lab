@@ -1,8 +1,3 @@
-// cypress/support/commands.js
-
-// ===== TASK 2: CUSTOM COMMAND =====
-// This custom command logs into SauceDemo in one reusable step
-
 Cypress.Commands.add('login', (username = 'standard_user', password = 'secret_sauce') => {
   cy.visit('/')
   cy.get('#user-name').type(username)
@@ -11,14 +6,11 @@ Cypress.Commands.add('login', (username = 'standard_user', password = 'secret_sa
   cy.url().should('include', '/inventory.html')
 })
 
-// Bonus custom command - adds a product to cart by name
 Cypress.Commands.add('addProductToCart', (productName) => {
-  // Convert "Sauce Labs Backpack" to "sauce-labs-backpack" format
   const testId = productName.toLowerCase().replace(/ /g, '-')
   cy.get(`[data-test="add-to-cart-${testId}"]`).click()
 })
 
-// Bonus custom command - gets cart item count
 Cypress.Commands.add('getCartItemCount', () => {
   return cy.get('body').then(($body) => {
     if ($body.find('.shopping_cart_badge').length > 0) {

@@ -10,7 +10,6 @@ describe('Advanced Cypress Techniques - Task 2', () => {
     cy.url().should('include', '/inventory.html')
   })
 
-  // 1. Different assertion types
   describe('Assertion Practice', () => {
     
     it('should verify element visibility, text, and attributes', () => {
@@ -30,12 +29,11 @@ describe('Advanced Cypress Techniques - Task 2', () => {
     })
   })
 
-  // 2. Negative Assertion - FIXED
   describe('Negative Assertion', () => {
     
     it('should verify error message does NOT exist on successful login', () => {
       cy.get('[data-test="error"]').should('not.exist')
-      cy.get('#login-button').should('not.exist')  // FIXED: not.exist instead of not.be.visible
+      cy.get('#login-button').should('not.exist')
     })
     
     it('should verify cart badge does not exist initially', () => {
@@ -43,7 +41,6 @@ describe('Advanced Cypress Techniques - Task 2', () => {
     })
   })
 
-  // 3. Alias Practice
   describe('Alias Practice', () => {
     
     it('should store and reuse elements with aliases', function() {
@@ -79,7 +76,6 @@ describe('Advanced Cypress Techniques - Task 2', () => {
     })
   })
 
-  // 4. Custom Commands
   describe('Custom Commands', () => {
     
     it('should demonstrate custom command structure', () => {
